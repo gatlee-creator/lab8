@@ -59,6 +59,15 @@ hybridAutoType::hybridAutoType(float chargeInput, float chargeEffoInput, float o
         engineMode = ELECTRIC; 
 }
 
+void hybridAutoType::switchMode(char modeInput){
+    if(modeInput == 'E')
+        engineMode = ELECTRIC;
+    else if(modeInput == 'G')
+        engineMode = GAS;
+    else 
+        cerr << "Invalid mode!" << endl;
+}
+
 
 void hybridAutoType::drive(float milesTrav){
     float chargeUsage, tempOdmter; 
