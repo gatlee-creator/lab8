@@ -70,9 +70,18 @@ void hybridAutoType::drive(float milesTrav){
             return; 
         if(bauCharge <= 0)
             return; // exit the function
-            
+     
+     chargeUsage = (1 / bauEfficieny) * milesTrav; 
+
+     if((bauCharge - chargeUsage) <= 0)
+        bauCharge = 0;
+    else
+        bauCharge -= chargeUsage; 
+    
+    
 
     } else{
         cout << "car is in gas mode" << endl;
+        //call drive from automobileType
     }
 }

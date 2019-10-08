@@ -14,6 +14,7 @@ int main()
     cout << hybrid2.getInfoString() << endl;
 
     hybrid2.drive(22.80);
+    cout << hybrid2.getInfoString() << endl;
 
     return 0;
 }
