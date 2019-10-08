@@ -32,7 +32,7 @@ string hybridAutoType::getInfoString() const {
     //modify string length to 2 decimal places
     pos = chargeToString.find_first_of(".");
     chargeToString = chargeToString.erase(pos + 3, chargeToString.length());
-    
+
     pos = effoToString.find_first_of(".");
     effoToString = effoToString.erase(pos + 3, effoToString.length());
     
@@ -46,6 +46,7 @@ string hybridAutoType::getInfoString() const {
 hybridAutoType::hybridAutoType(){
     bauCharge = DEFAULT_CHARGE_LEVEL; 
     bauEfficieny = DEFAULT_EFFICIENCY; 
+    engineMode = ELECTRIC; 
 
 }
 
