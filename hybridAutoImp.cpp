@@ -27,6 +27,16 @@ string hybridAutoType::getInfoString() const {
     string autoMobileStatus = automobileType::getInfoString(); 
     string chargeToString = to_string(bauCharge); 
     string effoToString = to_string(bauEfficieny);
+    int pos; 
+
+    //modify string length to 2 decimal places
+    pos = chargeToString.find_first_of(".");
+    chargeToString = chargeToString.erase(pos + 3, chargeToString.length());
+    
+    pos = effoToString.find_first_of(".");
+    effoToString = effoToString.erase(pos + 3, effoToString.length());
+    
+
     string hybridStatus = " Charge = " + chargeToString +
                           " Charge efficiency = " + effoToString; 
     
