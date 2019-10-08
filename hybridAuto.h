@@ -2,6 +2,7 @@
 #define HYBRIDAUTO_H
 
 #include "automobile.h"
+#include <string>
 
 class hybridAutoType : public automobileType {
     public:
@@ -12,6 +13,7 @@ class hybridAutoType : public automobileType {
         float getChargeLevel();
         void setChargeEfficiency(float);
         float getChargeEfficieny();   
+        std::string getInfoString() const; 
 
     private:
         float bauCharge;

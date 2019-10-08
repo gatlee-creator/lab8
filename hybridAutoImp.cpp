@@ -1,4 +1,6 @@
 #include "hybridAuto.h" 
+#include <string>
+using namespace std; 
 
 void hybridAutoType::setChargeLevel(float chargeInput){
     bauCharge = chargeInput; 
@@ -18,4 +20,8 @@ float hybridAutoType::getChargeEfficieny(){
     } else {
         return -1; 
     }
+}
+
+std::string hybridAutoType::getInfoString() const {
+    
 }
