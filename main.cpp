@@ -6,6 +6,7 @@ using namespace std;
 
 int main()
 {
+    float temp;
 
     cout << "HYBRID 1: creating hybrid1 with default constructor" << endl;
     hybridAutoType hybrid1; 
@@ -23,6 +24,11 @@ int main()
     hybrid2.switchMode('G');
     hybrid2.drive(50); 
     cout << hybrid2.getInfoString() << endl;
+
+    cout << "HYBRID 2: setting charge back to 20" << endl;
+    hybrid2.setChargeLevel(20);
+    temp = hybrid2.getChargeLevel(); 
+    cout << "Charge = " <<  temp << endl;
     
 
     return 0;
