@@ -78,7 +78,9 @@ void hybridAutoType::drive(float milesTrav){
     else
         bauCharge -= chargeUsage; 
     
-    // tempOdmter += milesTrav;
+    tempOdmter = getOdemeter(); 
+    tempOdmter += milesTrav;
+    setOdemeter(tempOdmter);
 
     } else{
         cout << "car is in gas mode" << endl;
