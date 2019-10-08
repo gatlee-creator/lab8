@@ -5,10 +5,10 @@ class hybridAutoType : public automobileType {
         static const bool GAS = false;
         static const bool ELECTRIC = true;
 
-        float setChargeLevel(float);
-        void getChargeLevel();
-        float setChargeEfficiency(float);
-        void getChargeEfficieny();   
+        void setChargeLevel(float);
+        float getChargeLevel();
+        void setChargeEfficiency(float);
+        float getChargeEfficieny();   
 
     private:
         float bauCharge;

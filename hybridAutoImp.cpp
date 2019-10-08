@@ -1,21 +1,21 @@
 #include "hybridAuto.h" 
 
-hybridAutoType::setChargeLevel(float chargeInput){
+void hybridAutoType::setChargeLevel(float chargeInput){
     bauCharge = chargeInput; 
 }
 
-hybridAutoType::getChargeLevel(){
+float hybridAutoType::getChargeLevel(){
     return bauCharge; 
 }
 
-hybridAutoType::setChargeEfficiency(float effoInput){
+void hybridAutoType::setChargeEfficiency(float effoInput){
     bauEfficieny = effoInput; 
 }
 
-hybridAutoType::getChargeEfficieny(){
-    if(engineMode=ELECTRIC){
+float hybridAutoType::getChargeEfficieny(){
+    if(engineMode==ELECTRIC){
         return bauEfficieny; 
     } else {
-        return; 
+        return -1; 
     }
 }
