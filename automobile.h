@@ -18,6 +18,13 @@ class automobileType{
                 fuel = fuelLevel
                 efficieny = effo
         */
+       void setOdemeter(float);
+       /*
+            Function that takes a paramter to indivually set the odemeter.
+            If any values are are below 0 then they are automatically set to 0.
+            Post Condition:
+                odemeter = odmterInput
+       */
         std::string getInfoString() const;
         /*
             Function that returns a string with an update of all 3 properties.

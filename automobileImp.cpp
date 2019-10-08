@@ -15,6 +15,13 @@ void automobileType::setProperties(float odmtrToSet, float fuelToSet, float effo
     effoToSet < minThres ? efficiency=0 : efficiency=effoToSet;
 }
 
+void automobileType::setOdemeter(float odmterInput){
+  if(odmterInput < 0)
+    odemeter = 0;
+  else
+    odemeter = odmterInput; 
+}
+
 string automobileType::getInfoString() const{
     string automobileStatus; 
     string fuelToString, odmtrToString, effoToString;
