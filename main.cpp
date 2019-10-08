@@ -13,5 +13,7 @@ int main()
     hybridAutoType hybrid2(20, 14.8, 3200, 40, 30.2);
     cout << hybrid2.getInfoString() << endl;
 
+    hybrid2.drive(22.80);
+
     return 0;
 }

@@ -58,3 +58,12 @@ hybridAutoType::hybridAutoType(float chargeInput, float chargeEffoInput, float o
         bauEfficieny = chargeEffoInput; 
         engineMode = ELECTRIC; 
 }
+
+
+void hybridAutoType::drive(float milesTrav){
+    if(ELECTRIC){
+        cout << "Car is in electric mode" << endl;
+    } else{
+        cout << "car is in gas mode" << endl;
+    }
+}
