@@ -1,3 +1,6 @@
+#ifndef HYBRIDAUTO_H
+#define HYBRIDAUTO_H
+
 #include "automobile.h"
 
 class hybridAutoType : public automobileType {
@@ -16,3 +19,5 @@ class hybridAutoType : public automobileType {
         bool engineMode; 
 
 }; 
+
+#endif 

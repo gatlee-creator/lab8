@@ -2,6 +2,9 @@
     Header file for the automobileType class
 */
 
+#ifndef AUTOMOBILE_H
+#define AUTOMOBILE_H
+
 #include <string>
 
 class automobileType{
@@ -51,3 +54,5 @@ class automobileType{
         float fuel;
         float efficiency; 
 };
+
+#endif
