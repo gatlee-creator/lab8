@@ -35,6 +35,9 @@ int main()
     hybrid2.setChargeEfficiency(28.92);
     temp = hybrid2.getChargeEfficieny();
 
+    cout << "HYBRID2: switching engine with invalid input" << endl;
+    hybrid2.switchMode('J');
+
 
     //make sure to create object of automobileType and test 
     
