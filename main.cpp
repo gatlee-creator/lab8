@@ -16,5 +16,10 @@ int main()
     hybrid2.drive(22.80);
     cout << hybrid2.getInfoString() << endl;
 
+    hybrid2.switchMode('G');
+    hybrid2.drive(50); 
+    cout << hybrid2.getInfoString() << endl;
+    
+
     return 0;
 }
