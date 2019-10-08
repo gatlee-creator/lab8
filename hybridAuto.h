@@ -17,6 +17,7 @@ class hybridAutoType : public automobileType {
         float getChargeEfficieny();   
         std::string getInfoString() const;
         hybridAutoType();  
+        hybridAutoType(float, float, float, float, float);
 
     private:
         float bauCharge;

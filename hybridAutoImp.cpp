@@ -38,3 +38,12 @@ hybridAutoType::hybridAutoType(){
     bauEfficieny = DEFAULT_EFFICIENCY; 
 
 }
+
+hybridAutoType::hybridAutoType(float chargeInput, float chargeEffoInput, float odmtrInput, float fuelInput, float autoEffoInput) 
+                : automobileType(odmtrInput, fuelInput, autoEffoInput)
+{
+        //body of constructor 
+        bauCharge = chargeInput;
+        bauEfficieny = chargeEffoInput; 
+        engineMode = ELECTRIC; 
+}
