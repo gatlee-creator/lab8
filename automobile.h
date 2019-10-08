@@ -25,6 +25,12 @@ class automobileType{
             Post Condition:
                 odemeter = odmterInput
        */
+        float getOdemeter();
+        /*
+            Function that returns the current value of odemeter 
+            Post Condition:
+                return odemeter 
+        */
         std::string getInfoString() const;
         /*
             Function that returns a string with an update of all 3 properties.

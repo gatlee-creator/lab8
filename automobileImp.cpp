@@ -22,6 +22,10 @@ void automobileType::setOdemeter(float odmterInput){
     odemeter = odmterInput; 
 }
 
+float automobileType::getOdemeter(){
+    return odemeter; 
+}
+
 string automobileType::getInfoString() const{
     string automobileStatus; 
     string fuelToString, odmtrToString, effoToString;
