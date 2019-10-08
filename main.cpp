@@ -50,9 +50,13 @@ int main()
     cout << "CAR 1: creating car1 of automobileType class." 
             "Testing all overridden functions "<< endl;
     automobileType car1(60000, 25, 13.2);
+    
     cout << "CAR 1: calling getInfo. Should only return original version." << endl;
     cout << car1.getInfoString() << endl;
     
+    cout << "CAR 1: driving 100 miles. Should call original function" << endl;
+    car1.drive(100);
+    cout << car1.getInfoString() << endl;
 
     return 0;
 }
