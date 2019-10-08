@@ -32,3 +32,9 @@ string hybridAutoType::getInfoString() const {
     
     return autoMobileStatus + hybridStatus; 
 }
+
+hybridAutoType::hybridAutoType(){
+    bauCharge = DEFAULT_CHARGE_LEVEL; 
+    bauEfficieny = DEFAULT_EFFICIENCY; 
+
+}

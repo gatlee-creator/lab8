@@ -8,12 +8,15 @@ class hybridAutoType : public automobileType {
     public:
         static const bool GAS = false;
         static const bool ELECTRIC = true;
+        const float DEFAULT_CHARGE_LEVEL = 20; 
+        const float DEFAULT_EFFICIENCY = 15; 
 
         void setChargeLevel(float);
         float getChargeLevel();
         void setChargeEfficiency(float);
         float getChargeEfficieny();   
-        std::string getInfoString() const; 
+        std::string getInfoString() const;
+        hybridAutoType();  
 
     private:
         float bauCharge;
