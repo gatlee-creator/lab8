@@ -25,10 +25,18 @@ int main()
     hybrid2.drive(50); 
     cout << hybrid2.getInfoString() << endl;
 
-    cout << "HYBRID 2: setting charge back to 20" << endl;
+    cout << "HYBRID 2: setting electric charge back to 20" << endl;
     hybrid2.setChargeLevel(20);
     temp = hybrid2.getChargeLevel(); 
     cout << "Charge = " <<  temp << endl;
+
+    cout << "HYBRID 2: setting electric efficiency to 28.92. " 
+         << "Should get prompt to switch back to Electric mode" << endl;
+    hybrid2.setChargeEfficiency(28.92);
+    temp = hybrid2.getChargeEfficieny();
+
+
+    //make sure to create object of automobileType and test 
     
 
     return 0;

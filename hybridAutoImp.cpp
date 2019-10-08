@@ -19,6 +19,7 @@ float hybridAutoType::getChargeEfficieny(){
     if(engineMode==ELECTRIC){
         return bauEfficieny; 
     } else {
+        cerr << "Error: Switch engine mode to electric." << endl;
         return -1; 
     }
 }
@@ -69,7 +70,7 @@ void hybridAutoType::switchMode(char modeInput){
         cout << "Engine switched to gas mode" << endl;
     }   
     else{
-        cerr << "Invalid engine mode!" << endl;
+        cerr << "Error: Invalid engine mode" << endl;
     } 
         
 }
