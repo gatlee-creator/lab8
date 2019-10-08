@@ -1,3 +1,11 @@
+/*
+    Name: Graham Atlee
+    Course: csc1720
+    Location of program : ~/csc1720/Labs/lab8
+
+    This program contains driver code that tests the full capabilites 
+    of the hybridAutoType class. 
+*/
 #include <iostream>
 #include <string>
 #include "hybridAuto.h"

@@ -1,5 +1,10 @@
 /*
-    Header file for the automobileType class
+    Name: Graham Atlee
+    Course: csc1720
+    Location of program : ~/csc1720/Labs/lab8
+
+    Header file for the automobileType class. Uses header guards to prevent 
+    duplicate inclusion. 
 */
 
 #ifndef AUTOMOBILE_H

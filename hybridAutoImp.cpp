@@ -1,3 +1,11 @@
+/*
+    Name: Graham Atlee
+    Course: csc1720
+    Location of program : ~/csc1720/Labs/lab8
+
+    This is the implementation file for the hybridAutoType class. The code
+    contains function defenitions. 
+*/
 #include "hybridAuto.h" 
 #include <string>
 #include <iostream>

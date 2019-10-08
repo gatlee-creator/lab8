@@ -1,4 +1,8 @@
 /*
+    Name: Graham Atlee
+    Course: csc1720
+    Location of program : ~/csc1720/Labs/lab8
+
     Implementation of the automobileType class. Contains member variables
     and member functions for the automobileType. 
 */
