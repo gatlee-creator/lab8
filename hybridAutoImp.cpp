@@ -82,18 +82,22 @@ void hybridAutoType::drive(float milesTrav){
         //cout << "Car is in electric mode" << endl;
         
         //first do checks 
-        if(milesTrav <= 0)
+        if(milesTrav < 0){
+            cerr << "Error: cannot drive negative miles" << endl;
             return; 
-        if(bauCharge <= 0)
-            return; // exit the function
+        }
+            
      
      chargeUsage = (1 / bauEfficieny) * milesTrav; 
 
-     if((bauCharge - chargeUsage) <= 0)
-        bauCharge = 0;
-    else
+     if((bauCharge - chargeUsage) <= 0){
+          bauCharge = 0;
+          cerr << "Error: Out of charge" << endl;
+     }
+     else{
         bauCharge -= chargeUsage; 
-    
+     }
+       
     tempOdmter = getOdemeter(); 
     tempOdmter += milesTrav;
     setOdemeter(tempOdmter);

@@ -35,11 +35,23 @@ int main()
     hybrid2.setChargeEfficiency(28.92);
     temp = hybrid2.getChargeEfficieny();
 
-    cout << "HYBRID2: switching engine with invalid input" << endl;
+    cout << "HYBRID 2: switching engine with invalid input" << endl;
     hybrid2.switchMode('J');
 
+    cout << "HYBRID 3: creating hybrid 3 and driving until out of charge" << endl;
+    hybridAutoType hybrid3; 
+    for(int i = 0; i < 17; i++)
+        hybrid3.drive(18); 
+
+    cout << "HYBRID 3: attempting to drive negative miles" << endl;
+    hybrid3.drive(-44.52); 
 
     //make sure to create object of automobileType and test 
+    cout << "CAR 1: creating car1 of automobileType class." 
+            "Testing all overridden functions "<< endl;
+    automobileType car1(60000, 25, 13.2);
+    cout << "CAR 1: calling getInfo. Should only return original version." << endl;
+    cout << car1.getInfoString() << endl;
     
 
     return 0;
