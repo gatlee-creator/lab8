@@ -35,7 +35,7 @@ float hybridAutoType::getChargeEfficieny(){
 string hybridAutoType::getInfoString() const {
     string autoMobileStatus = automobileType::getInfoString(); 
     string chargeToString = to_string(bauCharge); 
-    string effoToString = to_string(bauEfficieny);
+    string effoToString = to_string(bauEfficiency);
     int pos; 
 
     //modify string length to 2 decimal places
