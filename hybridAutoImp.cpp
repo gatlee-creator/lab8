@@ -27,8 +27,8 @@ string hybridAutoType::getInfoString() const {
     string autoMobileStatus = automobileType::getInfoString(); 
     string chargeToString = to_string(bauCharge); 
     string effoToString = to_string(bauEfficieny);
-    string hybridStatus = "charge = " + chargeToString +
-                          " charge efficiency = " + effoToString; 
+    string hybridStatus = " Charge = " + chargeToString +
+                          " Charge efficiency = " + effoToString; 
     
     return autoMobileStatus + hybridStatus; 
 }
