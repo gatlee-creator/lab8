@@ -85,5 +85,6 @@ void hybridAutoType::drive(float milesTrav){
     } else{
         cout << "car is in gas mode" << endl;
         //call drive from automobileType
+        automobileType::drive(milesTrav);
     }
 }
