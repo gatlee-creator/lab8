@@ -62,13 +62,14 @@ hybridAutoType::hybridAutoType(float chargeInput, float chargeEffoInput, float o
 void hybridAutoType::switchMode(char modeInput){
     if(modeInput == 'E'){
         engineMode = ELECTRIC;
+        cout << "Engine switched to electric mode" << endl;
     }
     else if(modeInput == 'G'){
         engineMode = GAS;
-        cout << "Engine switch to gas mode" << endl;
+        cout << "Engine switched to gas mode" << endl;
     }   
     else{
-        cerr << "Invalid mode!" << endl;
+        cerr << "Invalid engine mode!" << endl;
     } 
         
 }
@@ -77,7 +78,7 @@ void hybridAutoType::switchMode(char modeInput){
 void hybridAutoType::drive(float milesTrav){
     float chargeUsage, tempOdmter; 
     if(engineMode == ELECTRIC){
-        cout << "Car is in electric mode" << endl;
+        //cout << "Car is in electric mode" << endl;
         
         //first do checks 
         if(milesTrav <= 0)
@@ -97,7 +98,7 @@ void hybridAutoType::drive(float milesTrav){
     setOdemeter(tempOdmter);
 
     } else{
-        cout << "car is in gas mode" << endl;
+        // cout << "car is in gas mode" << endl;
         //call drive from automobileType
         automobileType::drive(milesTrav);
     }
