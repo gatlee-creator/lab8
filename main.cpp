@@ -12,7 +12,7 @@ int main()
     hybridAutoType hybrid1; 
     cout << hybrid1.getInfoString() << endl; 
 
-    cout << "HYBRID 2: creating hybrid2 with 5 paramter constructor" << endl;
+    cout << "HYBRID 2: creating hybrid2 with 5 parameter constructor" << endl;
     hybridAutoType hybrid2(20, 14.8, 3200, 40, 30.2);
     cout << hybrid2.getInfoString() << endl;
 
@@ -47,10 +47,10 @@ int main()
     hybrid3.drive(-44.52); 
 
     //make sure to create object of automobileType and test 
-    cout << "CAR 1: creating car1 of automobileType class." 
+    cout << "CAR 1: creating car1 of automobileType class. " 
             "Testing all overridden functions "<< endl;
     automobileType car1(60000, 25, 13.2);
-    
+
     cout << "CAR 1: calling getInfo. Should only return original version." << endl;
     cout << car1.getInfoString() << endl;
     
