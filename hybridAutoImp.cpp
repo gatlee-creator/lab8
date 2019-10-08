@@ -38,7 +38,7 @@ string hybridAutoType::getInfoString() const {
     
 
     string hybridStatus = " Charge = " + chargeToString +
-                          " Charge efficiency = " + effoToString; 
+                          " Battery efficiency = " + effoToString; 
     
     return autoMobileStatus + hybridStatus; 
 }
