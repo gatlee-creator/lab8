@@ -108,9 +108,8 @@ class hybridAutoType : public automobileType {
 
     private:
         float bauCharge;
-        float bauEfficieny; //spelled wrong!
+        float bauEfficiency; 
         bool engineMode; 
-
 }; 
 
 #endif 

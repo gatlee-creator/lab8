@@ -20,12 +20,12 @@ float hybridAutoType::getChargeLevel(){
 }
 
 void hybridAutoType::setChargeEfficiency(float effoInput){
-    bauEfficieny = effoInput; 
-}
+    bauEfficiency = effoInput; 
+}   
 
 float hybridAutoType::getChargeEfficieny(){
     if(engineMode==ELECTRIC){
-        return bauEfficieny; 
+        return bauEfficiency; 
     } else {
         cerr << "Error: Switch engine mode to electric." << endl;
         return -1; 
@@ -54,7 +54,7 @@ string hybridAutoType::getInfoString() const {
 
 hybridAutoType::hybridAutoType(){
     bauCharge = DEFAULT_CHARGE_LEVEL; 
-    bauEfficieny = DEFAULT_EFFICIENCY; 
+    bauEfficiency = DEFAULT_EFFICIENCY; 
     engineMode = ELECTRIC; 
 
 }
@@ -64,7 +64,7 @@ hybridAutoType::hybridAutoType(float chargeInput, float chargeEffoInput, float o
 {
         //body of constructor 
         bauCharge = chargeInput;
-        bauEfficieny = chargeEffoInput; 
+        bauEfficiency = chargeEffoInput; 
         engineMode = ELECTRIC; 
 }
 
@@ -96,7 +96,7 @@ void hybridAutoType::drive(float milesTrav){
         }
             
      
-     chargeUsage = (1 / bauEfficieny) * milesTrav; 
+     chargeUsage = (1 / bauEfficiency) * milesTrav; 
 
      if((bauCharge - chargeUsage) <= 0){
           bauCharge = 0;
